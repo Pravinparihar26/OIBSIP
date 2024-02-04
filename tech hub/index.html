@@ -1,0 +1,687 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tech Hub</title>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body class="index">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+            <img src="logo-transparent.png" alt="Logo" height="50vw">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact us.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">All</a></li>
+                            <li><a class="dropdown-item" href="#">Latest</a></li>
+                            <li><a class="dropdown-item" href="#">Ongoing</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="login.html" class="login-btn btn btn-dark"
+                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .8rem; --bs-btn-font-size: .75rem;">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="mainhead">
+        <div class="header">
+            <img src="gif6.gif" alt="">
+            <h1>Stay Ahead with the Latest Tech Trends</h1>
+        </div>
+    </div>
+
+    <div class="primarycard">
+        <h2>Technology Evolution</h2>
+        <div id="pri-card-list">
+            <ul>
+                <li><a onclick="showcontent('latest')" id="latestLink">INNOVATIVE INSIGHTS</a></li>
+                <li><a onclick="showcontent('ongoing')" id="ongoingLink">TECH TRENDS UNVEILED</a></li>
+                <li><a onclick="showcontent('upcoming')" id="upcomingLink">FUTURE TECH FRONTIERS</a></li>
+            </ul>
+        </div>
+
+        <!-- latest technologies -->
+        <div id="latest" class="container mt-4">
+            <div id="carouselExample1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Machine Learning</h5>
+                                        <p class="card-text">Computers learning and improving from experience, without
+                                            explicit programming.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Artificial Intelligence</h5>
+                                        <p class="card-text">Computer systems mimicking human intelligence for tasks
+                                            like learning and reasoning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Blockchain</h5>
+                                        <p class="card-text">Decentralized digital ledger for secure and transparent
+                                            transaction recording.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Internet of Things</h5>
+                                        <p class="card-text">Interconnected devices sharing data for smart applications.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second slide -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">5G Technology</h5>
+                                        <p class="card-text">wireless communication for faster data and advanced
+                                            applications.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Quantum Computing</h5>
+                                        <p class="card-text">Computing using quantum mechanics for complex
+                                            problem-solving.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Augmented Reality (AR)</h5>
+                                        <p class="card-text">Overlaying digital information on the real-world
+                                            environment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Virtual Reality (VR)</h5>
+                                        <p class="card-text">Immersive technology simulating a computer-generated
+                                            environment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <button class="carousel-control-prev " type="button" data-bs-target="#carouselExample1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- ongoing technologies -->
+        <div id="ongoing" class="container mt-4 ">
+            <div id="carouselExample2" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Cybersecurity</h5>
+                                        <p class="card-text">Technologies focused on detecting and countering cyber
+                                            threats, including advanced threat detection, analytics, and secure access
+                                            solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Biotechnology</h5>
+                                        <p class="card-text">Use of biological systems for developing products and
+                                            technologies in medicine, agriculture, and industry.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Edge Computing</h5>
+                                        <p class="card-text">Continual advancements in decentralized data processing at
+                                            the edge of networks, reducing latency and improving efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Robotics</h5>
+                                        <p class="card-text">Design and operation of autonomous or semi-autonomous
+                                            machines to perform tasks.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- second slide -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Biometric Technology</h5>
+                                        <p class="card-text">developments in technology that uses unique biological
+                                            features for authentication, including facial recognition and fingerprint
+                                            scanning.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Autonomous Vehicles</h5>
+                                        <p class="card-text">Progress in self-driving vehicle technologies,
+                                            incorporating sensors, AI algorithms, and safety systems for automated
+                                            transportation.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Drone Technology</h5>
+                                        <p class="card-text">Advancements in unmanned aerial vehicle capabilities,
+                                            applied in agriculture, delivery services, surveillance, and more.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Robotic Process Automation (RPA)</h5>
+                                        <p class="card-text">Automation of repetitive tasks using software robots,
+                                            enhancing efficiency in business processes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- upcoming technologies -->
+        <div id="upcoming" class="container mt-4 ">
+            <div id="carouselExample3" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- First Slide -->
+                    <div class="carousel-item active">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Artificial General Intelligence</h5>
+                                        <p class="card-text">Machines with human-like cognitive abilities, capable of
+                                            understanding, learning, and applying knowledge across diverse domains.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg5.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Neuromorphic Computing</h5>
+                                        <p class="card-text">Computing architectures inspired by the human brain's
+                                            structure and functionality, aiming to improve machine learning capabilities
+                                            and energy efficiency.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg6.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Quantum Internet</h5>
+                                        <p class="card-text">Development of a quantum communication infrastructure,
+                                            enabling ultra-secure and high-speed quantum communication.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg7.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Holographic Displays</h5>
+                                        <p class="card-text">Development of holographic technology for more immersive
+                                            and realistic visual experiences.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- second slide -->
+                    <div class="carousel-item">
+                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg7.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Biocomputing</h5>
+                                        <p class="card-text">Leveraging biological systems for computing applications,
+                                            including DNA computing and biologically inspired algorithms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Superconductors for Energy Storage</h5>
+                                        <p class="card-text">Development of high-temperature superconductors for more
+                                            efficient and compact energy storage solutions.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Emotional AI</h5>
+                                        <p class="card-text">AI systems capable of understanding and responding to human
+                                            emotions, enhancing interactions in various applications.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="main-card card">
+                                    <img src="jpg4.jpg" class="card-img-top" alt="">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Metaverse Technologies</h5>
+                                        <p class="card-text">Advancements in virtual worlds and augmented reality,
+                                            creating immersive digital environments for work, socializing, and
+                                            entertainment.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Latest Projects -->
+    <div id="project" class="mx-auto text-center">
+        <h3 class="mt-5 mb-4 text-dark">Latest Projects</h3>
+
+        <!-- Card 1 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="jpg5.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">OpenAI's DALL-E</h5>
+                        <p class="card-text">AI generates images from textual descriptions, sparking creative visual
+                            synthesis.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4 order-md-2">
+                    <img src="jpg6.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Starlink by SpaceX</h5>
+                        <p class="card-text">Global satellite constellation for high-speed internet in remote areas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="jpg7.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Quantum Supremacy by Google</h5>
+                        <p class="card-text">Quantum computing breakthrough surpassing classical supercomputers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4 order-md-2">
+                    <img src="jpg6.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Neuralink's Brain Interface</h5>
+                        <p class="card-text">Enables direct communication between the human brain and external devices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="jpg7.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Microsoft's Project Natick</h5>
+                        <p class="card-text">Explores sustainability with underwater data centers for efficient data
+                            storage.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Ongoing Projects -->
+    <div id="on_project" class="mx-auto text-center">
+        <h3 class="mt-5 mb-4 text-dark">Ongoing Projects</h3>
+
+        <!-- Card 1 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="jpg5.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">IBM's CodeNet</h5>
+                        <p class="card-text">Advances AI in programming through diverse coding challenges and tasks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4 order-md-2">
+                    <img src="jpg6.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Facebook's Aria</h5>
+                        <p class="card-text">Develops augmented reality glasses, capturing real-world data for immersive
+                            experiences.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="jpg7.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Waymo's Self-Driving Cars</h5>
+                        <p class="card-text">Waymo pioneers autonomous vehicle technology, transforming the future of
+                            transportation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4 order-md-2">
+                    <img src="jpg6.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8 order-md-1">
+                    <div class="card-body">
+                        <h5 class="card-title">Amazon's Kuiper</h5>
+                        <p class="card-text">Aims to provide global internet via satellite constellation for
+                            connectivity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="card mb-3 mx-auto" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="jpg7.jpg" class="img-fluid rounded small-image lat-pro-card" alt="">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Hyundai's Elevate Walking Car</h5>
+                        <p class="card-text">Innovates with a walking car for versatile mobility on challenging
+                            terrains.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <h2>Tech Titans: Leading Brands Shaping Tomorrow's World</h2>
+        <div class="slide-track" id="slideTrack">
+            <div class="slide">
+                <img src="logo/amazon-logo-removebg-preview.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/apple-logo-removebg-preview.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/Cisco_logo-removebg-preview.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/google-logo-removebg-preview.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/Intel-Logo.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/meta-logo-removebg-preview.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/microsoft-logo-removebg-preview.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/nvidia-logo.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/OpenAI-Logo-removebg-preview.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/Qualcomm-Logo-removebg-preview.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/spacex-logo-removebg-preview.png" alt="">
+            </div>
+            <div class="slide">
+                <img src="logo/Tesla_logo-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <footer class="row text-center bg-dark text-white p-4 m-0">
+            <div class="col md-4">
+                <h5>About Us:</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="about us.html#mission" class="nav-link p-0 text-white">Mission</a></li>
+                    <li class="nav-item mb-2"><a href="about us.html#vision" class="nav-link p-0 text-white">Vision</a></li>
+                </ul>
+            </div>
+
+            <div class="col md-4">
+                <h5>Contact Us:</h5>
+                <p class="text-white">123 Main Street, Pune, India</p>
+                <p class="text-white">Email: pravinparihar@gmail.com</p>
+                <p class="text-white">Phone: 1234567890</p>
+            </div>
+
+            <div class="col md-4">
+                <h5>Projects:</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="#project" class="nav-link p-0 text-white">All
+                            Projects</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="#project" class="nav-link p-0 text-white">Latest
+                            Projects</a></li>
+                    <li class="nav-item mb-2"><a href="#on_project" class="nav-link p-0 text-white">Ongoing
+                            Projects</a></li>
+                </ul>
+            </div>
+
+            <div class="mt-4">
+                <!-- Facebook -->
+                <a type="button" class="btn btn-floating btn-light btn-lg" style="border-radius: 100%;" href="#"><i
+                        class="fa fa-facebook-f "></i></a>
+                <!-- Linkedin -->
+                <a type="button" class="btn btn-floating btn-light btn-lg" style="border-radius: 100%" href="#"><i
+                        class="fa fa-linkedin"></i></a>
+                <!-- Twitter -->
+                <a type="button" class="btn btn-floating btn-light btn-lg" style="border-radius: 100%" href="#"><i
+                        class="bi-twitter"></i></a>
+                <!-- Google + -->
+                <a type="button" class="btn btn-floating btn-light btn-lg" style="border-radius: 100%" href="#"><i
+                        class="bi-google"></i></a>
+                <!-- Instagram -->
+                <a type="button" class="btn btn-floating btn-light btn-lg" style="border-radius: 100%" href="#"><i
+                        class="bi-instagram"></i></a>
+                <!-- Github -->
+                <a type="button" class="btn btn-floating btn-light btn-lg" style="border-radius: 100%" href="#"><i
+                        class="bi-github"></i></a>
+
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

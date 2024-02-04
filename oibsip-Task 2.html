@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        #main-container {
+            height: 70vh;
+            background-image: url("images/coder.jpg");
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+            background-size: cover;
+            background-position: center;
+        }
+
+        #main-container h1 {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        #skills div {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        #certificates{
+            margin-top: 3rem;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .certificate-item {
+            margin: 2% 5% 0% 5%;
+        }
+
+        .certificate-item img {
+            width: 40vw;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .project-items {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-item {
+            display: flex;
+            margin: 2%;
+        }
+
+        .project-item iframe {
+            width: 80%;
+            height: 300px;
+            border: none;
+        }
+
+        .project-item-text {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        .project-item h3 {
+            margin: 0;
+            text-align: center;
+        }
+
+        .project-item p {
+            margin: 10px 0;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main-container">
+        <h1>Pravin Parihar</h1>
+        <p>Web Developer</p>
+        <p>I'm Pravin Parihar, a recent graduate with a passion for web development and a hunger to make a mark in the
+            digital world. While I may be new to the industry, my enthusiasm for coding and creating dynamic web
+            experiences is boundless.</p>
+    </div>
+
+    <section id="education">
+        <div class="container">
+            <h2>Education</h2>
+            <p>University: SPPU</p>
+            <p>Degree: Bachelor of Engineering(Computer Engineering)</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div>
+                <img src="images/html-icon.png" alt="HTML" width="40" height="40">
+                <p>HTML</p>
+            </div>
+            <div>
+                <img src="images/css-icon.jpeg" alt="CSS" width="40" height="40">
+                <p>CSS</p>
+            </div>
+            <div>
+                <img src="images/js-icon.png" alt="JavaScript" width="40" height="40">
+                <p>JavaScript</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+
+        <div class="project-items">
+            <div class="project-item">
+                <iframe src="Traveller Guide/Main_page.html"></iframe>
+                <div class="project-item-text">
+                    <h3>Traveller's Guide</h3>
+                    <p>Guide the Tourists by giving information about Famous Places</p>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <iframe src="tech hub/index.html"></iframe>
+                <div class="project-item-text">
+                    <h3>Tech Hub</h3>
+                    <p>Helps to get Knowledge about Latest Technology and its Projects</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates">
+        <h2>Certificates</h2>
+
+        <div class="row">
+            <div class="certificate-item">
+                <img src="images/Cyber Security and Privacy Certificate.jpg" alt="Certificate 1">
+                <h3>Cyber Security</h3>
+            </div>
+
+            <div class="certificate-item">
+                <img src="images/Java Certificate.jpg" alt="Certificate 2">
+                <h3>Java</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <p>Email: pravinparihar7.26@gmail.com</p>
+            <p>Phone: 9422380069</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn" width="40" height="40"></a>
+                <a href="#"><img src="images/GitHub-icon.png" alt="GitHub" width="35" height="35"></a>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

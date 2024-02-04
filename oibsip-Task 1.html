@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing page</title>
+</head>
+
+<style>
+    body {
+        margin: 0%;
+    }
+
+    /* navbar */
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0%;
+        overflow: hidden;
+        background-color: #212121;
+    }
+
+    li {
+        float: left;
+        text-align: center;
+    }
+
+    li h3{
+        text-align: center;
+        padding: 0rem 1rem;
+        color: #ff0000;
+    }
+
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 1.5vw;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #474747;
+    }
+
+    /* head section */
+
+    .main {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+    }
+
+    .image {
+        width: 50%;
+        padding: 2%;
+        box-sizing: border-box;   
+        background-color: #ffffff;
+    }
+
+    .image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .text {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+    }
+
+    /* Technology card */
+
+    .cards h2 {
+        text-align: center;
+    }
+
+    .column {
+        box-sizing: border-box;
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        margin-bottom: 1rem;
+    }
+
+    .card {
+        padding-bottom: 1%;
+        text-align: center;
+        background-color: #ffffff;
+    }
+
+    .card img {
+        width: 100%;
+        height: 30vh;
+    }
+
+    /* project style*/
+
+    .projects h2 {
+        text-align: center;
+    }
+
+    .pro-column {
+        margin: auto;
+        margin-top: 2%;
+        width: 50%;
+    }
+
+    .pro-card {
+        margin: 1% auto;
+        height: auto;
+        border: 1px solid rgb(0, 0, 0);
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .pro-card img {
+        width: 50%;
+        border-radius: inherit;
+    }
+
+    .pro-card h3 {
+        flex: 1;
+    }
+
+    /* footer style */
+
+    .footer {
+        text-align: center;
+        padding: 1%;
+        background-color: #212121;
+        margin-top: 2%;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="navbar">
+        <ul>
+            <li><h3>Tech Hub</h3></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+
+    <div class="main">
+        <div class="image">
+            <img src="images/gif6.gif" alt="Image">
+        </div>
+        <div class="text">
+            <h1>Stay Ahead with the Latest Tech Trends</h1>
+        </div>
+    </div>
+
+    <div class="cards">
+        <h2>Latest Technology</h2>
+
+        <div class="rows">
+            <div class="column">
+                <div class="card">
+                    <img src="images/jpg5.jpg">
+                    <h3>Artificial Intelligence</h3>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="images/jpg6.jpg">
+                    <h3>Blockchain</h3>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="images/jpg7.jpg">
+                    <h3>IOT</h3>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img src="images/jpg29.avif">
+                    <h3>Augmented Reality (AR)</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="projects">
+        <h2>Latest Projects</h2>
+        <div class="pro-column">
+
+            <div class="pro-card">
+                <img src="images/openai.jpeg">
+                <h3>OpenAI's DALL-E</h3>
+            </div>
+
+            <div class="pro-card">
+                <img src="images/waymo's self driving car.jpg">
+                <h3>Waymo's Self-Driving Cars</h3>
+            </div>
+
+            <div class="pro-card">
+                <img src="images/project aria.jpg">
+                <h3>Facebook's Project Aria</h3>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>Pravin Parihar</p>
+        <p>Phone no. : 1234567890</p>
+        <p>Email : pravinparihar@gmail.com</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+/* navbar */
+.navbar {
+    height: 5rem;
+}
+
+.login-btn {
+    width: 100px;
+    background: transparent;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+    border: none;
+}
+
+.login-btn:hover {
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+/* head section */
+.mainhead {
+    background-color: rgb(255, 255, 255);
+    height: 30rem;
+    margin-top: 4%;
+}
+
+.header {
+    display: inline;
+}
+
+.header img {
+    width: 50%;
+    height: auto;
+
+}
+
+.header h1 {
+    font-size: 2vw;
+    display: inline;
+    color: rgb(0, 0, 0);
+    font-style: italic;
+}
+
+/* primarycard */
+.primarycard h2 {
+    text-align: center;
+    padding: 2rem;
+    font-weight: 700;
+}
+
+#pri-card-list {
+    display: flex;
+    justify-content: center;
+}
+
+#pri-card-list ul {
+    list-style: none;
+    overflow: hidden;
+    padding-bottom: 5px;
+    box-shadow: 0 1px 0px rgb(192, 192, 192);
+    padding-inline-start: 0px;
+}
+
+#pri-card-list li {
+    font-size: small;
+    display: inline-block;
+    color: rgb(161, 160, 160);
+}
+
+#pri-card-list li a {
+    text-decoration: none;
+}
+
+#pri-card-list li:hover {
+    color: rgb(48, 47, 47);
+}
+
+#pri-card-list li.active a {
+    font-weight: bold;
+    color: rgb(82, 81, 81);
+    border-bottom: 3px solid rgb(192, 192, 192);
+    padding-bottom: 6px;
+}
+
+#pri-card-list li:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.main-card {
+    overflow: hidden;
+}
+
+.main-card img {
+    height: 20rem;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.main-card img:hover {
+    transform: scale(1.1);
+}
+
+/* latest project card */
+.lat-pro-card {
+    max-height: 125px;
+    width: 180px;
+}
+
+#project p{
+    font-size: small;
+}
+
+/* logo slider */
+.slider img {
+    width: 100px;
+    height: 100px;
+    animation: scroll 10s linear infinite;
+}
+
+.slide-track {
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    overflow: hidden;
+}
+
+.slider {
+    margin-top: 10px;
+    background-color: whitesmoke;
+    padding: 2em 2em;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translatex(-2000%)
+    }
+}
+
+.slider h2 {
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
